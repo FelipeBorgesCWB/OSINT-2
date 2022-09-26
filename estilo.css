@@ -4,7 +4,7 @@
 }
 
 body{
-	font-family: "century gothic";
+	font-family:"century gothic";
 	font-size: 10px;
 	background-image: linear-gradient( 0deg, #ffffff 0%, #013766 180%);
 }
@@ -31,8 +31,8 @@ header{
   	font-size: 15vw;
 	margin-right: 10px;
 	margin-top: 50px;
-  	font-family:'Times New Roman', Times, serif;
-  	animation: cor 50s infinite;
+  	font-family: Times, serif;
+  	animation: cor 40s infinite;
 }
 
 ::-webkit-scrollbar {
@@ -75,7 +75,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	font-size: 30px;
-	padding: 90px;
+	padding: 50px 100px 0 100px;
 	background-image: linear-gradient( 0deg, #ffffff 0%, #013766 180%);
 }
 
@@ -106,7 +106,6 @@ footer{
 	font-size: 10px;
 	padding: 0px;
 	background-color: rgba(0, 0, 0);
-	overflow-x: scroll;		
 }
 
 .links{
@@ -228,5 +227,11 @@ html{
 		}
 		.titulo{
 			font-size: 20px;
+		}
+		.nav{
+			overflow-x: scroll;
+		}
+		ul, li{
+			padding: 10px;
 		}
 	  } 
