@@ -35,9 +35,6 @@ header{
   	animation: cor 40s infinite;
 }
 
-::-webkit-scrollbar {
-}
-
 /*#osint:hover{
 	color: white;
     font-size: 120px;
