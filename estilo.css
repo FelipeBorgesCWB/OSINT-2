@@ -6,7 +6,7 @@
 body{
 	font-family: "century gothic";
 	font-size: 10px;
-	background: #DCDCDC;
+	background-image: linear-gradient( 0deg, #ffffff 0%, #013766 180%);
 }
 
 header{
@@ -16,7 +16,7 @@ header{
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 16em;
+	height: 30vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: right;
@@ -28,16 +28,17 @@ header{
 	/*font-size: 200px;
 	font-family: "century gothic", "helvetica",arial;
 	/*text-shadow: 0 0 0.3em #F87, 0 0 0.2em #F87;*/
-	color: black;
-  	font-size: 90px;
+  	font-size: 15vw;
 	margin-right: 10px;
 	margin-top: 50px;
-  	font-family: Times New Roman, century gothic;
-  	font-weight: bold;
-  	animation: cor 12s infinite;
+  	font-family:'Times New Roman', Times, serif;
+  	animation: cor 50s infinite;
 }
 
-#osint:hover{
+::-webkit-scrollbar {
+}
+
+/*#osint:hover{
 	color: white;
     font-size: 120px;
     font-family: Times New Roman, century gothic;
@@ -59,6 +60,27 @@ header{
       -13px 13px 1px rgba(0, 0, 0, 0.5);
       transition: 1s;
       cursor: pointer;
+}*/
+
+.titulo{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 50px;
+	color: rgb(0, 0, 0);
+}
+
+.primeiraPagina {
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	padding: 90px;
+	background-image: linear-gradient( 0deg, #ffffff 0%, #013766 180%);
+}
+
+ul, li{
+	padding: 10px;
 }
 
 footer{
@@ -74,29 +96,26 @@ footer{
 	text-align: center;
 }
 
-#logo{
-	width: 140px;
-	position: absolute;
-	left: 0px;
-	top: 15px;
-	padding: 10px;
-	animation: animate 12s infinite;
-}
-
 .nav{
 	display: flex;
-	justify-content: center;
+	justify-content: left;
+	font-family: 'Courier New', Courier, monospace;
 	width: 100%;
-	height: 25px;
+	height: 60px;
 	position: fixed;
-	background: black;
-	font-size: 7px;
-	padding: 5px;
+	font-size: 10px;
+	padding: 0px;
+	background-color: rgba(0, 0, 0, 0.63);
+	overflow-x:visible;		
 }
 
 .links{
-	font-size: 2em;
-	padding: 3px;
+	display: flex;
+	font-size: 15px;
+	padding: 5px;
+	align-items: center;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 a{
@@ -112,7 +131,7 @@ a{
   	text-decoration: underline;
 }
 
-a:active{
+.links:active{
 	border: 1px solid white;
 }
 
@@ -144,23 +163,12 @@ a:active{
 	width: 60%;
 }
 
-p:target {
-	border: 2px solid red;
-	background-color: gold;
+.imagens:active{
+	border: 1px solid rgb(255, 255, 255);
 }
 
 html{
 	scroll-behavior: smooth;
-}
-
-.titulo{
-	display: flex;
-	justify-content: center;
-	text-align:center;
-	font-size: 15px;
-	padding: 10px;
-	color: rgb(0, 0, 0);
-	
 }
 
 .h3{
@@ -186,21 +194,39 @@ html{
 
 @keyframes cor{
 		0%{
-			color: 	#000000;
+			color: 	#013766;
 		}
 		25%{
-			color: #2F4F4F;
+			color: #00609a;
 		}
 		50%{
-			color: 	#696969;
+			color: 	#0092c5;
 		}
 		75%{
-			color: #708090;	
+			color: #009fd6;	
 		}
 		90%{
-			color: #BEBEBE;
+			color: #09e1fe;
+		}
+		95%{
+			color: 	transparent;
 		}
 		100%{
-			color: 	#000000;
+			color: 	#000312;
 		}
 	}	
+
+
+	@media screen and (max-width: 800px) {
+		.imagens{
+			border: 1px solid gray;
+			width: 100%;
+		}
+		.primeiraPagina{
+			padding: 30px;
+			font-size: 20px;
+		}
+		.titulo{
+			font-size: 20px;
+		}
+	  } 
