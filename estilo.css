@@ -247,4 +247,7 @@ html{
 		ul, li{
 			padding: 10px;
 		}
+		p{
+			padding: 10px 50px 10px 50px;
+		}
 	}
