@@ -185,19 +185,19 @@ footer{
 
 @keyframes cor{
 		0%{
-			color: 	#013766;
+			color: #09e1fe;
 		}
 		25%{
-			color: #00609a;
+			color: #009fd6;
 		}
 		50%{
 			color: 	#0092c5;
 		}
 		75%{
-			color: #009fd6;	
+			color: #00609a;	
 		}
 		90%{
-			color: #09e1fe;
+			color: #013766;
 		}
 		95%{
 			color: 	transparent;
@@ -206,7 +206,6 @@ footer{
 			color: 	#000312;
 		}
 	}	
-
 
 	@media screen and (max-width: 700px) {
 		.imagens{
