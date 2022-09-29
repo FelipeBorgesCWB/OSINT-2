@@ -5,32 +5,22 @@
 
 body{
 	font-family:"century gothic";
-	font-size: 10px;
 	background-image: linear-gradient( 0deg, #ffffff 0%, #013766 140%);
 }
 
 header{
-	/*background: black;
-	background-image: url(imagens/fundo2.jpg);*/
 	background-image: url(imagens/tec.jpg);
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 30vh;
 	display: flex;
-	flex-direction: row;
-	justify-content: right;
+	justify-content: flex-end;
 	align-items: center;
-	color: white;
 }
 
 #osint{
-	/*font-size: 200px;
-	font-family: "century gothic", "helvetica",arial;
-	/*text-shadow: 0 0 0.3em #F87, 0 0 0.2em #F87;*/
-  	font-size: 15vw;
-	margin-right: 10px;
-	margin-top: 50px;
+  	font-size: 12vw;
   	font-family: Times, serif;
   	animation: cor 40s infinite;
 }
@@ -62,84 +52,55 @@ header{
 .titulo{
 	display: flex;
 	flex-direction: column;
+	margin-top: 15px;
 	text-align: center;
-	font-size: 45px;
+	font-size: 40px;
 	color: rgb(0, 0, 0);
 }
 
 .primeiraPagina {
-	height: 68vh;
+	height: 70vh;
 	display: flex;
 	flex-direction: column;
-	font-size: 23px;
-	padding: 60px; 
+	font-size: 21px;
+	padding: 0px 150px 0px 150px;
 	background-image:linear-gradient( 0deg, #ffffff 0%, #013766 180%);
 }
 
 ul, li{
-	padding: 10px;
-}
-
-footer{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	height: 100px;
-	margin-top: 100px;
-	font-size: 2em;
-	background: black;
-	color: white;
-	text-align: center;
-	font-family: 'Courier New', Courier, monospace;
+	padding: 5px;
 }
 
 .nav{
 	display: flex;
-	justify-content: left;
 	font-family: 'Courier New', Courier, monospace;
 	width: 100%;
 	height: 60px;
 	position: fixed;
-	font-size: 10px;
-	background-color: rgba(0, 0, 0);
+	background-image: linear-gradient(to bottom, #00609a, transparent);
 }
 
 .links{
-	display: flex;
 	font-size: 15px;
 	padding: 5px;
+	display: flex;
 	align-items: center;
-	background-color: transparent;
 	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 a{
 	text-decoration: none;
 	color: white;
-	font-weight: 400;
 	padding: 5px;
 }
 
 .links a:hover {
-	/*text-decoration: underline;
-  	text-decoration-thickness: 2px;*/
+  	/*text-decoration-thickness: 2px;*/
   	text-decoration: underline;
 }
 
 .links:active{
 	border: 1px solid white;
-}
-
-.linkExternos a{
-	text-decoration: none;
-	color: black;
-	text-decoration: underline;
-}
-
-.linkExternos a:hover{
-	font-size: 30px;
-	transition: 0.4s;
 }
 
 .conteudo{
@@ -153,6 +114,17 @@ a{
 	padding: 0px;
 	font-family: "century gothic";
 	padding: 10px 0 30px 0;
+}
+
+.linkExternos a{
+	text-decoration: none;
+	color: black;
+	text-decoration: underline;
+}
+
+.linkExternos a:hover{
+	font-size: 30px;
+	transition: 0.4s;
 }
 
 .textoTitulo{
@@ -177,19 +149,26 @@ html{
 }
 
 .h3{
-	margin-top: 20px;
+	height: 90px;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	font-size: 30px;
-	background-color: rgb(255, 255, 255);
-	/*border-top: 2px solid rgb(162, 240, 253);*/
+	justify-content: end;
+	font-size: 35px;
+	background-color: white;
 }
 
-.hX{
-	margin-top: 20px;
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin-top: 200px;
+	font-size: 15px;
+	background: black;
+	color: white;
 	text-align: center;
-	font-size: 30px;
-	background-color: transparent;
-	color: transparent;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 @keyframes animate{
