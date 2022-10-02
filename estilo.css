@@ -22,7 +22,7 @@ header{
 #osint{
   	font-size: 12vw;
   	font-family: Times, serif;
-  	animation: cor 40s infinite;
+  	animation: cor 30s  ease-in reverse infinite;
 }
 
 /*#osint:hover{
@@ -55,7 +55,8 @@ header{
 	margin-top: 15px;
 	text-align: center;
 	font-size: 40px;
-	color: rgb(0, 0, 0);
+	color: rgb(24, 24, 24);
+	text-shadow: -6px 3px 4px rgba(50, 50, 50, 0.77);
 }
 
 .primeiraPagina {
@@ -123,8 +124,9 @@ a{
 }
 
 .linkExternos a:hover{
-	font-size: 30px;
-	transition: 0.4s;
+	color: #0069c5;
+	/*font-size: 30px;
+	transition: 0.4s;*/
 }
 
 .textoTitulo{
@@ -138,6 +140,12 @@ p{
 .imagens{
 	border: 1px solid gray;
 	width: 600px;
+	box-shadow: -6px 6px 6px rgba(50, 50, 50, 0.77);
+}
+
+.imagens:hover{
+	transform: scale(1.2);
+	transition: 1s;
 }
 
 .imagens:active{
