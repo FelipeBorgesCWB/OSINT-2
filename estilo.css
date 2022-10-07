@@ -79,6 +79,7 @@ ul, li{
 	height: 60px;
 	position: fixed;
 	background-image: linear-gradient(to bottom, #00609a, transparent);
+	z-index: 1;
 }
 
 .links{
